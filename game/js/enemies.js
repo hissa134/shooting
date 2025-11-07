@@ -1,5 +1,7 @@
 export const enemies = [];
-const SIZE = 26;
+const SIZE = 50;
+const enemyImage = new Image();
+enemyImage.src = "images/隕石.jpg";
 
 function pushEnemies(canvas) {//enemyは敵の意味
     const w = SIZE;
@@ -31,5 +33,6 @@ export function drawEnemies(ctx) {
     ctx.fillStyle = "crimson";
     for (const e of enemies) {
         ctx.fillRect(e.x, e.y, e.width, e.height);
+        ctx.drawImage(enemyImage, e.x, e.y, e.width, e.height);
     }
 }

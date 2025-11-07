@@ -1,3 +1,4 @@
+
 export const player = {
     x: 0,
     y: 0,
@@ -5,6 +6,7 @@ export const player = {
     height: 30,
     color: "blue",
     life: 3,
+    score: 0,
 };
 
 export function initPlayer(canvas) { //initは初期化の意味
