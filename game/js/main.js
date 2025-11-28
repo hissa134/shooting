@@ -77,6 +77,7 @@ canvas.height);
      }
 
     drawEnemies(ctx);
+    // tryShoot();//球を自動で打つ
 }
 
 function gameLoop() {
