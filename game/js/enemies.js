@@ -1,7 +1,7 @@
 export const enemies = [];
 const SIZE = 50;
 const enemyImage = new Image();
-enemyImage.src = "images/隕石.jpg";
+enemyImage.src = "images/隕石.png";
 
 function pushEnemies(canvas) {//enemyは敵の意味
     const w = SIZE;
